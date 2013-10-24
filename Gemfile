@@ -9,14 +9,15 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 
-group : development, :test do
+group :development,:test  do
+	gem 'sqlite3'
+end
+
+group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
 
-group : produvtion, do
-	gem 'sqlite3'
-end
 
 
 group :doc do
