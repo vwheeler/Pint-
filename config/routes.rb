@@ -2,7 +2,7 @@ Pint::Application.routes.draw do
   resources :pins
 
   devise_for :users
-  root 'pages#home'
+  root "pins#index"
   get "about" => 'pages#about'
   get "mission" => 'pages#mission'  # creates about path 
   
